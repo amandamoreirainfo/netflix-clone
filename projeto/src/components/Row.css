@@ -10,7 +10,7 @@
 
         display: flex;
         overflow-y: hidden;
-        overflow-x: scroll;
+        overflow-x: hidden;
         padding: 20px;
 
     }
@@ -27,8 +27,19 @@
 
     .movie-cards {
         
+       
         width: 100%;
         max-height: 100px;
+        margin-bottom: 10px;
+        transition: transform 450ms;
+
+    }
+
+    .movie-cards-large {
+
+        object-fit: contain;
+        width: 100%;
+        max-height: 250px;
         margin-bottom: 10px;
         transition: transform 450ms;
 

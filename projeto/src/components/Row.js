@@ -4,7 +4,7 @@ import "./Row.css";
 
 const imageHost = "https://image.tmdb.org/t/p/original";
 
-function Row({title, path}) {
+function Row({title, path, isLarge}) {
 
     const [movies, setMovies] = React.useState([]);
 
@@ -42,7 +42,7 @@ function Row({title, path}) {
                     return(
 
                         <img 
-                            className="movie-cards"
+                            className={`movie-cards ${isLarge && "movie-cards-large"}`}
                             key={movie.id} 
                             src={`${imageHost}${movie.poster_path}`} 
                             alt={movie.name}
