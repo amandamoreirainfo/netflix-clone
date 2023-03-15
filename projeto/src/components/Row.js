@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { getMovies } from "../api";
 
-const imageHost = "https://image.tmdv.org/t/p/original";
+const imageHost = "https://image.tmdb.org/t/p/original";
 
 function Row({title, path}) {
 
