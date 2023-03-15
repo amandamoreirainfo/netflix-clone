@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { getMovies } from "../api";
+import "./Row.css";
 
 const imageHost = "https://image.tmdb.org/t/p/original";
 
@@ -41,6 +42,7 @@ function Row({title, path}) {
                     return(
 
                         <img 
+                            className="movie-cards"
                             key={movie.id} 
                             src={`${imageHost}${movie.poster_path}`} 
                             alt={movie.name}
